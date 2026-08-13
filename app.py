@@ -19,7 +19,9 @@ def send_telegram_alert(message):
         requests.post(url, json=payload, timeout=5)
     except Exception as e:
         print(f"Error sending Telegram alert: {e}")
-
+@app.route('/')
+def home():
+    return "Bot is running successfully!"
 @app.route('/webhook', methods=['POST'])
 def webhook_handler():
     data = request.get_json()
