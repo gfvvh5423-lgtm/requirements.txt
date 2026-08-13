@@ -43,7 +43,7 @@ def test_alert():
     '''
 
 def send_telegram_alert(text):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={text}"
+    url = f"https://api.telegram.org/bot{8690826652:AAEEjIT4WqXUKQgW6pKP6yPCD-ARZER9Abk}/sendMessage?chat_id={8690826652&text={text}"
     try:
         requests.get(url)
     except Exception as e:
